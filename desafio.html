@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="desafio.css">
+    <title> Decodificador - ONE</title>
+</head>
+
+<body>
+
+    <!-- Cabeçalho-->
+    <header class="cabecalho">
+        <img class="conteudo-cabecalho" src="Frame 6.svg" alt="Logo Alura">
+        <h1 class="conteudo-cabecalho1">Mensagens Codificadas</h1>
+
+    </header>
+
+    <main class="conteudo">
+        <!-- Área do texto a ser criptografado-->
+        <section class="principal">
+            <div class="conteudo-principal">
+                <textarea class="area-digitar" cols="30" rows="10" required placeholder="Digite seu texto aqui"
+                    id="input"></textarea>
+            </div>
+
+            <!-- Área de Informação -->
+            <section class="area-informacao">
+                <img class="informacao" src="Frame 1.png" alt="Frase: Apenas letras minúsculas e sem acento.">
+            </section>
+            <!--Botões de criptografar e descriptografar-->
+            <section class="area-botao">
+                <div class="botao">
+                    <button class="btn-criptografrar" onclick=" criptografar() "> Criptografar </button>
+
+                    <button class="btn-descriptografrar" onclick=" descriptografar() "> Descriptografar </button>
+
+                </div>
+            </section>
+        </section>
+
+
+        <!-- Área do texto descriptografado-->
+        <div class="texto-saida">
+            <textarea name="output" id="output" cols="70" rows="10"></textarea>
+            <img id="img" src="High quality products 1 1.svg" alt="" class="imagem">
+            <img id="imgs" src="Frame 5.png" alt="" class="imagem">
+
+            <button class="copiar" id="btn-copiar" onclick=" copy() ">Copiar</button>
+
+        </div>
+
+        </section>
+
+    </main>
+    <script src="desafio.js"></script>
+
+
+
+
+
+
+
+</body>
+
+</html>
